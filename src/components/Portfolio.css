@@ -1,0 +1,14 @@
+.navbar {
+  background-color: #fffdf6 !important;
+}
+
+.navbar-nav > li {
+  margin-left: 30px;
+  margin-right: 30px;
+  font-size: 18px;
+}
+
+.nav-link {
+  font-family: var(--tertiary-font-family);
+  font-size: 16px;
+}

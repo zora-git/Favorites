@@ -1,18 +1,18 @@
-import "./App.css";
+import React from "react";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import Home from "./components/Home";
+import Portfolio from "./components/Portfolio";
+import About from "./components/About";
 
 function App() {
   return (
-    <div className="Home">
-      <div className="Intro">
-        <a href="/art-tech.html">
-          <h1 className="Hero">
-            H<span className="Name">yun</span> J
-            <span className="Name">ung</span> Park
-          </h1>
-        </a>
-      </div>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
+    </Router>
   );
 }
-
 export default App;
